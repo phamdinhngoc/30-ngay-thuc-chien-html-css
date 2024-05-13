@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomer img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin: 0 50px;
+    cursor: zoom-in;
+}
+
+#mirror {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url('/ImageGalery/images/1.jpg');
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.hide {
+    display: block;
+}
